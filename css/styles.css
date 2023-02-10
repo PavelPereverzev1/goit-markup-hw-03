@@ -67,9 +67,12 @@ img {
 
 /* HEADER */
 
+.main-header {
+  border-bottom: 1px solid var(--cornflower);
+}
+
 .main-header > .container {
   display: flex;
-  border-bottom: 1px solid var(--cornflower);
 }
 
 .main-nav {
@@ -257,6 +260,9 @@ section {
 .team-list-item {
   background-color: var(--clr-white);
   flex-basis: calc((100% - 24px * 3) / 4);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .card-content {
@@ -317,6 +323,7 @@ section {
 .filter .filter-btn:focus {
   color: var(--clr-white);
   background: var(--accent-color);
+  border: 1px solid var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
